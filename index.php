@@ -8,11 +8,11 @@ echo "<h2>Validando conexión a bases de datos...</h2>";
 
 // --- Primero PostgreSQL (puerto 5432 explícito) ---
 $pg_conn = pg_connect(
-    "host=10.161.2.4 " .
+    "host=10.104.2.4 " .
     "port=5432 " .
     "dbname=postgres " .
-    "user=Tiancris " .
-    "password=#Zarache060221 " .
+    "user=Jsabino " .
+    "password=Js1042242747 " .
     "sslmode=require"
 );
 
@@ -25,9 +25,9 @@ if ($pg_conn) {
 
 // --- Luego MySQL (puerto 3306 explícito) ---
 $mysql = mysqli_connect(
-    "10.161.0.4",    // Host MySQL
-    "Tiancris",      // Usuario
-    "#Zarache060221",// Contraseña
+    "10.104.0.4",    // Host MySQL
+    "Jsabino",      // Usuario
+    "Js1042242747",// Contraseña
     "",              // Base de datos (vacío si no aplica)
     3306             // Puerto
 );
